@@ -12,7 +12,15 @@ setup = function() {
     text("⸙", 420-i, 390);
   }  
 
-  
+  var animal = [ "- Wombat", "- Hyrax", "- Panda","- Cat","- Cowfish"];
+
+  fill(random(255),random(255),random(255))
+  var textY = 80;
+  for(var animalNum = 0; animalNum < animal.length; animalNum++){
+  text(animal[animalNum], 50, textY);
+  textY += 50
+}
+ 
 };
 
 
